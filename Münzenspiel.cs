@@ -188,7 +188,7 @@ namespace PoseProjekt
                     {
                         if (field[i, j] == true)
                         {
-                            return false;
+                            return false; // ja bro
                         }
                     }
                 }
