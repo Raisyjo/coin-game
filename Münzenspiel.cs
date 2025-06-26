@@ -3,8 +3,9 @@
  *--------------------------------------------------------------
  *              Joey CHU 
  *--------------------------------------------------------------
- * Hab wirklich alles bis auf die Musik komplett selber gemacht. Ich wünsche Ihnen viel Spaß beim austesten
- *---------------------------------------------------------------------------awd
+ * Münzenspiel--- pyramide man zieht abwechselnd mit jedem zug kann man max
+ * eine ganze reihe ziehen
+ *---------------------------------------------------------------------------
 */
 
 //copyright will not be tolerated (c) Joey CHU
@@ -12,7 +13,7 @@ using System;
 using System.Threading;
 
 
-namespace Cabsspiel
+namespace PoseProjekt
 {
     public static class Program
     {
