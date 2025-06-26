@@ -223,11 +223,11 @@ namespace PoseProjekt
             Console.WriteLine("║  Eingabe im Spiel                                                       ║");
             Console.WriteLine("║                                                                         ║");
             Console.WriteLine("║ Zuerst die Reihe angeben und dann wie viele genommen werden sollen      ║");
-            Console.WriteLine("║    \"reihe, anzahl\"                                                     ║");
+            Console.WriteLine("║    \"reihe, anzahl\"                                                      ║");
             Console.WriteLine("║ Bsp: 2,1 (Aus der 2 Reihe wird 1 genommen)                              ║");
             Console.WriteLine("║      4,6 (Aus der 4 Reihe werden 6 genommen)                            ║");
             Console.WriteLine("║                                                                         ║");
-            Console.WriteLine("║ \"exit\" um das Spiel abzu brechen                                       ║");
+            Console.WriteLine("║ \"exit\" um das Spiel abzu brechen                                        ║");
             Console.WriteLine("║ Ungültige Eingaben werden  wiederholt                                   ║");
             Console.WriteLine("╚═════════════════════════════════════════════════════════════════════════╝");
             Console.ResetColor();
