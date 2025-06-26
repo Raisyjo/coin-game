@@ -177,6 +177,39 @@ namespace PoseProjekt
                 Console.WriteLine();
             }
         }
+        public static void PrintRules(bool inGame)
+  {
+      Console.Clear();
+      Console.WriteLine("╔═════════════════════════════════════════════════════════════════════════╗", Console.ForegroundColor = ConsoleColor.Green);
+      Console.WriteLine("║  REGELN                                                                 ║");
+      Console.WriteLine("║                                                                         ║");
+      Console.WriteLine("║ 1.Spieler ziehen abwechselnd                                            ║");
+      Console.WriteLine("║ 2.Nur 1 Reihe pro Zug                                                   ║");
+      Console.WriteLine("║ 3.Wer das letzte nimmt, verliert                                        ║");
+      Console.WriteLine("║                                                                         ║");
+      Console.WriteLine("║                                                                         ║");
+      Console.WriteLine("║                                                                         ║");
+      Console.WriteLine("║  Eingabe im Spiel                                                       ║");
+      Console.WriteLine("║                                                                         ║");
+      Console.WriteLine("║ Zuerst die Reihe angeben und dann wie viele genommen werden sollen      ║");
+      Console.WriteLine("║    \"reihe, anzahl\"                                                    ║");
+      Console.WriteLine("║ Bsp: 2,1 (Aus der 2 Reihe wird 1 genommen)                              ║");
+      Console.WriteLine("║      4,6 (Aus der 4 Reihe werden 6 genommen)                            ║");
+      Console.WriteLine("║                                                                         ║");
+      Console.WriteLine("║ \"exit\" um das Spiel abzu brechen                                      ║");
+      Console.WriteLine("║ Ungültige Eingaben werden  wiederholt                                   ║");
+      Console.WriteLine("╚═════════════════════════════════════════════════════════════════════════╝");
+      Console.ResetColor();
+      Console.WriteLine();
+      Console.WriteLine();
+      
+      if (!inGame)
+      {
+          Console.Write("Beliebige Taste drücken, um zum Menü zurück zu kehren...");
+          Console.ReadKey();
+         
+      }
+  }
 
         public static bool Turn(bool[,] field, ref int player, string charackter, string[] playerNames)
         {
