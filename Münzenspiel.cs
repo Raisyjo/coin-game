@@ -18,10 +18,10 @@ namespace PoseProjekt
     {
         public static void Main()
         {
-            CoinGAme.Menü();
+            CoinGame.Menü();
         }
     }
-    public static class CoinGAme
+    public static class CoinGame
     {
         public static void Menü()// pack alle sachen rein
         {
@@ -131,9 +131,9 @@ namespace PoseProjekt
             {
                 Console.Clear();
 
-                CoinGAme.PrintField(field, charackter);
-                quit = CoinGAme.Turn(field, ref player, charackter, playerNames);
-                winner = CoinGAme.IsWinner(false, field);
+                CoinGame.PrintField(field, charackter);
+                quit = CoinGame.Turn(field, ref player, charackter, playerNames);
+                winner = CoinGame.IsWinner(false, field);
                 if (winner)
                 {
                     if(field.GetLength(0) == 4)
