@@ -42,10 +42,10 @@ namespace PoseProjekt
 
 
                 Console.WriteLine("╔═══════════════════Menü═════════════════════════════╗");
-                Console.WriteLine("║ \u24F5 : Play Game                                 ║");
-                Console.WriteLine("║ \u24F6 : Play Gamemode                             ║");
-                Console.WriteLine("║ \u24F7 : Coin Inventory                            ║");
-                Console.WriteLine("║ \u24F8 : Rules     (given at the start of the game)║");
+                Console.WriteLine("║ \u24F5 : Play Game                                      ║");
+                Console.WriteLine("║ \u24F6 : Play Gamemode                                  ║");
+                Console.WriteLine("║ \u24F7 : Coin Inventory                                 ║");
+                Console.WriteLine("║ \u24F8 : Rules    (given at the start of the game)      ║");
                 Console.WriteLine("╚════════════════════════════════════════════════════╝");
                 int input = Tools.ReadInput("Was möchtest du tun [1 - 6]: ", 6);
 
