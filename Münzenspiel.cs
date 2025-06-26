@@ -235,7 +235,7 @@ namespace PoseProjekt
                 return true;
 
             }
-            
+            Animate(row, count, RemainigInRow(field, row - 1), charackter);
             UpdateField(field, row - 1, count);
             player = 1 == player ? 2 : 1;
             return false;
