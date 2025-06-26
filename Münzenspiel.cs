@@ -209,6 +209,7 @@ namespace PoseProjekt
                 Console.WriteLine();
             }
         }
+       //Radovan
         public static void PrintRules(bool inGame)
         {
             Console.Clear();
@@ -310,7 +311,7 @@ namespace PoseProjekt
             }
             return false;
         }
-
+        // Radovan
         public static void UpdateField(bool[,] field, int row, int count)
         {
             for (int i = 0; count > 0; i++)
@@ -323,6 +324,7 @@ namespace PoseProjekt
             }
         }
 
+        // Radovan
         public static int RemainigInRow(bool[,] field, int row)
         {
             int count = 0;
@@ -338,6 +340,7 @@ namespace PoseProjekt
     }
     public class Tools
     {
+       // Radovan
         public static string ReadInput(string message)
         {
             Console.Write(message);
