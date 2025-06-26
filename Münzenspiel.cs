@@ -99,12 +99,12 @@ namespace PoseProjekt
             Console.Clear();
            
             Console.WriteLine("╔═══════════════════Skin═════════════════════════════╗");
-            Console.WriteLine("║ \u24F5 : \u058D   (Standard)                       ║");
-            Console.WriteLine("║ \u24F6 : \u2605                                    ║");
-            Console.WriteLine("║ \u24F7 : \U0001F525                                ║");
-            Console.WriteLine("║ \u24F8 : \u2694                                    ║");
-            Console.WriteLine("║ \u24F9 : \u2620                                    ║");
-            Console.WriteLine("║ \u24FA : Back to the menu                          ║");
+            Console.WriteLine("║ \u24F5 : \u058D   (Standard)                                 ║");
+            Console.WriteLine("║ \u24F6 : \u2605                                              ║");
+            Console.WriteLine("║ \u24F7 : \U0001F525                                             ║");
+            Console.WriteLine("║ \u24F8 : \u2694                                              ║");
+            Console.WriteLine("║ \u24F9 : \u2620                                              ║");
+            Console.WriteLine("║ \u24FA : Back to the menu                               ║");
             Console.WriteLine("╚════════════════════════════════════════════════════╝");
             int input = Tools.ReadInput("Choose a skin: ", 6);
 
@@ -275,10 +275,10 @@ namespace PoseProjekt
         public static void Gamemode(ref int gameMode)
         {
             Console.Clear();
-            Console.WriteLine("╔═══════════════════Spiel-Modus══════════════════════╗");
-            Console.WriteLine("║ \u24F5 : Standard (Pyramide)                       ║");
-            Console.WriteLine("║ \u24F6 : Block                                     ║");
-            Console.WriteLine("║ \u24FA : Zurück zum Menü                           ║");
+            Console.WriteLine("╔═══════════════════Game - Mode══════════════════════╗");
+            Console.WriteLine("║ \u24F5 : Standard (Pyramide)                            ║");
+            Console.WriteLine("║ \u24F6 : Block                                          ║");
+            Console.WriteLine("║ \u24FA : Zurück zum Menü                                ║");
             Console.WriteLine("╚════════════════════════════════════════════════════╝");
            int input = Tools.ReadInput("Wähle ein Spielmodus aus[1-3]: ", 6);
             if (input != 6)
