@@ -29,12 +29,11 @@ namespace PoseProjekt
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             string[] playerNames = { "1", "2" };
             string charackter = "\u058D";
-                bool[,] field = {
-                { false, false, false, true, false, false, false },
-                                        { false, false,true, true, true, false, false },
-                                        { false, true, true, true, true, true, false },
-                                        { true, true, true, true, true, true, true }
-            };
+            bool[,] field = {{ false, false, false, true, false, false, false },
+                                { false, false,true, true, true, false, false },
+                                { false, true, true, true, true, true, false },
+                                { true, true, true, true, true, true, true }
+                                                                            };
             int gameMode = 1;
             int count = 1;
             for (bool end = false; end == false;)
