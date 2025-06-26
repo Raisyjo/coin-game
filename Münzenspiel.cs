@@ -233,12 +233,12 @@ namespace PoseProjekt
             Console.ResetColor();
             Console.WriteLine();
             Console.WriteLine();
+            
 
             if (!inGame)
             {
                 Console.Write("Beliebige Taste drücken, um zum Menü zurück zu kehren...");
                 Console.ReadKey();
-
             }
         }
         public static bool Turn(bool[,] field, ref int player, string charackter, string[] playerNames)
@@ -291,11 +291,8 @@ namespace PoseProjekt
                 gameMode = input;
             }
         }
-
-
         public static bool ValidInput(string input, bool[,] field, out int row, out int count)
         {
-            
             string[] parts = input.Split(',');
             count = -1;
             row = -1;
@@ -341,12 +338,9 @@ namespace PoseProjekt
             }
             return count;
         }
-
-       
     }
     public class Tools
     {
-
         public static string ReadInput(string message)
         {
             Console.Write(message);
@@ -372,6 +366,5 @@ namespace PoseProjekt
             } while (!valid);
             return input;
         }
-
     }
 }
