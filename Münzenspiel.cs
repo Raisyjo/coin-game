@@ -45,7 +45,7 @@ namespace Cabsspiel
 
 
                 Console.WriteLine("╔═══════════════════Menü═════════════════════════════╗");
-                Console.WriteLine("║ \u24F5 : Spielen                                        ║");
+                Console.WriteLine("║ \u24F5 : Play Game                                 ║");
                 Console.WriteLine("║ \u24F6 : Spiel Modus                                    ║");
                 Console.WriteLine("║ \u24F7 : Münze Spind                                    ║");
                 Console.WriteLine("║ \u24F8 : Regeln        (bei Spielstart eingeblendet)    ║");
