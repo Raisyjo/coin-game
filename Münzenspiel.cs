@@ -61,6 +61,9 @@ namespace PoseProjekt
                     case 3:
                         Skin(ref charackter);
                         break;
+                    case 4:
+                        PrintRules(false);
+                        break;
                 }
             }
         }
@@ -128,6 +131,7 @@ namespace PoseProjekt
         }
         public static void Game(bool[,] field, string charackter, string[] playerNames, int gameMode,int count)
         {
+            PrintRules(true);
             int player = 1;
             bool winner = false;
             bool quit = false;
