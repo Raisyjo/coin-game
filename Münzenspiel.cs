@@ -316,9 +316,9 @@ namespace Cabsspiel
 
                 if (int.TryParse(Console.ReadLine(), out input))
                 {
-                        valid = input <= max && input > 0;
+                    valid = input <= max && input > 0;
                 }
-                if(!valid )
+                if (!valid)
                 {
                     Console.WriteLine("\U0001F5F2 Ungültige Eingabe\U0001F5F2  ", Console.ForegroundColor = ConsoleColor.Red);
                     Console.ResetColor();
@@ -326,6 +326,6 @@ namespace Cabsspiel
             } while (!valid);
             return input;
         }
-        
-        }
+
+    }
     }
