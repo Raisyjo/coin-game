@@ -90,6 +90,9 @@ namespace PoseProjekt
 
                 Console.SetCursorPosition(remainig - count + 12, 20 + row);
                 Console.Write(" " + shift);
+
+                Thread.Sleep(1);
+
             }
             Console.CursorVisible = true;
 
@@ -130,7 +133,7 @@ namespace PoseProjekt
         }
         public static void Game(bool[,] field, string charackter, string[] playerNames, int gameMode,int count)
         {
-            PrintRules(true);
+           
             int player = 1;
             bool winner = false;
             bool quit = false;
@@ -159,8 +162,7 @@ namespace PoseProjekt
             gameMode = random == true ? 5 : gameMode;
             do
             {
-                Console.Clear();
-
+                PrintRules(true);
                 CoinGame.PrintField(field, charackter);
                 quit = CoinGame.Turn(field, ref player, charackter, playerNames);
                 winner = CoinGame.IsWinner(false, field);
