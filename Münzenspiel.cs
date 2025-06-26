@@ -280,7 +280,7 @@ namespace PoseProjekt
             Console.WriteLine("║ \u24F6 : Block                                     ║");
             Console.WriteLine("║ \u24FA : Zurück zum Menü                           ║");
             Console.WriteLine("╚════════════════════════════════════════════════════╝");
-           int input = Tools.ReadInput("Wähle ein Spielmodus aus[1-6]: ", 6);
+           int input = Tools.ReadInput("Wähle ein Spielmodus aus[1-3]: ", 6);
             if (input != 6)
             {
                 gameMode = input;
