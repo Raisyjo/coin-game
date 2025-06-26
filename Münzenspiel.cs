@@ -137,13 +137,7 @@ namespace PoseProjekt
             int player = 1;
             bool winner = false;
             bool quit = false;
-            bool random = false;
-            if(gameMode == 5)
-            {
-                Random rnd = new Random();
-                 gameMode = rnd.Next(1, 4);
-                random = true;
-            }
+            
             switch (gameMode)
             {
                 case 1:
@@ -159,7 +153,7 @@ namespace PoseProjekt
                                         { true, true, true, true, true, true, true } };
                     break;
             }
-            gameMode = random == true ? 5 : gameMode;
+            
             do
             {
                 PrintRules(true);
@@ -282,8 +276,8 @@ namespace PoseProjekt
             Console.WriteLine("║ \u24F6 : Block                                          ║");
             Console.WriteLine("║ \u24F7 : Zurück zum Menü                                ║");
             Console.WriteLine("╚════════════════════════════════════════════════════╝");
-           int input = Tools.ReadInput("Wähle ein Spielmodus aus[1-3]: ", 6);
-            if (input != 6)
+           int input = Tools.ReadInput("Wähle ein Spielmodus aus[1-3]: ", 3);
+            if (input != 3)
             {
                 gameMode = input;
             }
