@@ -41,12 +41,12 @@ namespace PoseProjekt
                 Console.Clear();
 
 
-                Console.WriteLine("╔═══════════════════Menü═════════════════════════════╗");
-                Console.WriteLine("║ \u24F5 : Play Game                                      ║");
-                Console.WriteLine("║ \u24F6 : Play Gamemode                                  ║");
-                Console.WriteLine("║ \u24F7 : Coin Inventory                                 ║");
-                Console.WriteLine("║ \u24F8 : Rules    (given at the start of the game)      ║");
-                Console.WriteLine("╚════════════════════════════════════════════════════╝");
+                Console.WriteLine("╔═══════════════════Menü════════════════════════════╗");
+                Console.WriteLine("║ \u24F5 : Play Game   (Rules at the start)              ║");
+                Console.WriteLine("║ \u24F6 : Play Gamemode                                 ║");
+                Console.WriteLine("║ \u24F7 : Coin Inventory                                ║");
+                Console.WriteLine("║ \u24F8 : Rules                                         ║");
+                Console.WriteLine("╚═══════════════════════════════════════════════════╝");
                 int input = Tools.ReadInput("Was möchtest du tun [1 - 4]: ", 6);
 
 
@@ -136,13 +136,7 @@ namespace PoseProjekt
             int player = 1;
             bool winner = false;
             bool quit = false;
-            bool random = false;
-            if(gameMode == 5)
-            {
-                Random rnd = new Random();
-                 gameMode = rnd.Next(1, 4);
-                random = true;
-            }
+            
             switch (gameMode)
             {
                 case 1:
@@ -158,7 +152,7 @@ namespace PoseProjekt
                                         { true, true, true, true, true, true, true } };
                     break;
             }
-            gameMode = random == true ? 5 : gameMode;
+            
             do
             {
                 PrintRules(true);
@@ -187,7 +181,7 @@ namespace PoseProjekt
                     {
                         if (field[i, j] == true)
                         {
-                            return false;
+                            return false; // ja bro
                         }
                     }
                 }
@@ -208,6 +202,7 @@ namespace PoseProjekt
                 Console.WriteLine();
             }
         }
+       //Radovan
         public static void PrintRules(bool inGame)
         {
             Console.Clear();
@@ -279,10 +274,10 @@ namespace PoseProjekt
             Console.WriteLine("╔═══════════════════Game - Mode══════════════════════╗");
             Console.WriteLine("║ \u24F5 : Standard (Pyramide)                            ║");
             Console.WriteLine("║ \u24F6 : Block                                          ║");
-            Console.WriteLine("║ \u24FA : Zurück zum Menü                                ║");
+            Console.WriteLine("║ \u24F7 : Zurück zum Menü                                ║");
             Console.WriteLine("╚════════════════════════════════════════════════════╝");
-           int input = Tools.ReadInput("Wähle ein Spielmodus aus[1-3]: ", 6);
-            if (input != 6)
+           int input = Tools.ReadInput("Wähle ein Spielmodus aus[1-3]: ", 3);
+            if (input != 3)
             {
                 gameMode = input;
             }
@@ -309,7 +304,7 @@ namespace PoseProjekt
             }
             return false;
         }
-
+        // Radovan
         public static void UpdateField(bool[,] field, int row, int count)
         {
             for (int i = 0; count > 0; i++)
@@ -322,6 +317,7 @@ namespace PoseProjekt
             }
         }
 
+        // Radovan
         public static int RemainigInRow(bool[,] field, int row)
         {
             int count = 0;
@@ -337,6 +333,7 @@ namespace PoseProjekt
     }
     public class Tools
     {
+       // Radovan
         public static string ReadInput(string message)
         {
             Console.Write(message);
