@@ -46,9 +46,9 @@ namespace Cabsspiel
 
                 Console.WriteLine("╔═══════════════════Menü═════════════════════════════╗");
                 Console.WriteLine("║ \u24F5 : Play Game                                 ║");
-                Console.WriteLine("║ \u24F6 : Spiel Modus                                    ║");
-                Console.WriteLine("║ \u24F7 : Münze Spind                                    ║");
-                Console.WriteLine("║ \u24F8 : Regeln        (bei Spielstart eingeblendet)    ║");
+                Console.WriteLine("║ \u24F6 : Play Gamemode                                    ║");
+                Console.WriteLine("║ \u24F7 : Coin Inventory                                    ║");
+                Console.WriteLine("║ \u24F8 : Rules        (given at the start of the game)    ║");
                 Console.WriteLine("╚════════════════════════════════════════════════════╝");
                 int input = Tools.ReadInput("Was möchtest du tun [1 - 6]: ", 6);
 
@@ -79,9 +79,9 @@ namespace Cabsspiel
             Console.WriteLine("║ \u24F7 : \U0001F525                                             ║");
             Console.WriteLine("║ \u24F8 : \u2694                                              ║");
             Console.WriteLine("║ \u24F9 : \u2620                                              ║");
-            Console.WriteLine("║ \u24FA : Zürck zum Menü                                 ║");
+            Console.WriteLine("║ \u24FA : Back to the menu                                 ║");
             Console.WriteLine("╚════════════════════════════════════════════════════╝");
-            int input = Tools.ReadInput("Wähle einen Skin: ", 6);
+            int input = Tools.ReadInput("Choose a skin: ", 6);
 
 
             switch (input)
