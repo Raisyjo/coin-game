@@ -42,12 +42,12 @@ namespace PoseProjekt
                 Console.Clear();
 
 
-                Console.WriteLine("╔═══════════════════Menü══════════════════════════════════╗");
-                Console.WriteLine("║ \u24F5 : Play Game   (given at the start of the game)      ║");
-                Console.WriteLine("║ \u24F6 : Play Gamemode                                     ║");
-                Console.WriteLine("║ \u24F7 : Coin Inventory                                    ║");
-                Console.WriteLine("║ \u24F8 : Rules                                             ║");
-                Console.WriteLine("╚══════════════════════════════════════════════════════════╝");
+                Console.WriteLine("╔═══════════════════Menü════════════════════════════╗");
+                Console.WriteLine("║ \u24F5 : Play Game   (Rules at the start)              ║");
+                Console.WriteLine("║ \u24F6 : Play Gamemode                                 ║");
+                Console.WriteLine("║ \u24F7 : Coin Inventory                                ║");
+                Console.WriteLine("║ \u24F8 : Rules                                         ║");
+                Console.WriteLine("╚═══════════════════════════════════════════════════╝");
                 int input = Tools.ReadInput("Was möchtest du tun [1 - 4]: ", 6);
 
 
@@ -280,7 +280,7 @@ namespace PoseProjekt
             Console.WriteLine("╔═══════════════════Game - Mode══════════════════════╗");
             Console.WriteLine("║ \u24F5 : Standard (Pyramide)                            ║");
             Console.WriteLine("║ \u24F6 : Block                                          ║");
-            Console.WriteLine("║ \u24FA : Zurück zum Menü                                ║");
+            Console.WriteLine("║ \u24F7 : Zurück zum Menü                                ║");
             Console.WriteLine("╚════════════════════════════════════════════════════╝");
            int input = Tools.ReadInput("Wähle ein Spielmodus aus[1-3]: ", 6);
             if (input != 6)
