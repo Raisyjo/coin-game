@@ -18,9 +18,7 @@ namespace Cabsspiel
     {
         public static void Main()
         {
-            
             Streichholz.Menü();
-
         }
     }
     public static class Streichholz
@@ -43,7 +41,6 @@ namespace Cabsspiel
                 Console.Clear();
 
 
-
                 Console.WriteLine("╔═══════════════════Menü═════════════════════════════╗");
                 Console.WriteLine("║ \u24F5 : Play Game                                 ║");
                 Console.WriteLine("║ \u24F6 : Play Gamemode                                    ║");
@@ -64,7 +61,6 @@ namespace Cabsspiel
                     case 3:
                         Skin(ref charackter);
                         break;
-                  
                 }
             }
         }
@@ -102,10 +98,7 @@ namespace Cabsspiel
                     charackter = "\u2620";
                     break;
             }
-           
         }
-
-       
         public static void Game(bool[,] field, string charackter, string[] playerNames, int gameMode,int count)
         {
             int player = 1;
@@ -132,9 +125,6 @@ namespace Cabsspiel
                                         { true, true, true, true, true, true, true  },
                                         { true, true, true, true, true, true, true } };
                     break;
-            
-                
-
             }
             gameMode = random == true ? 5 : gameMode;
             do
@@ -155,8 +145,6 @@ namespace Cabsspiel
                     Console.ReadKey();
                 }
             } while (!winner && !quit);
-            
-           
         }
         public static bool IsWinner(bool end, bool[,] field)
         {
@@ -188,9 +176,6 @@ namespace Cabsspiel
                 }
                 Console.WriteLine();
             }
-
-
-
         }
 
         public static bool Turn(bool[,] field, ref int player, string charackter, string[] playerNames)
