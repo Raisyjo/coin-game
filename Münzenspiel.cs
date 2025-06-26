@@ -47,7 +47,7 @@ namespace PoseProjekt
                 Console.WriteLine("║ \u24F7 : Coin Inventory                                 ║");
                 Console.WriteLine("║ \u24F8 : Rules    (given at the start of the game)      ║");
                 Console.WriteLine("╚════════════════════════════════════════════════════╝");
-                int input = Tools.ReadInput("Was möchtest du tun [1 - 6]: ", 6);
+                int input = Tools.ReadInput("Was möchtest du tun [1 - 4]: ", 6);
 
 
                 switch (input)
