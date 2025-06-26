@@ -12,6 +12,7 @@ using System;
 using System.Threading;
 
 
+
 namespace PoseProjekt
 {
     public static class Program
@@ -87,10 +88,8 @@ namespace PoseProjekt
                     shift = shift.Remove(shift.Length - 1, 1);
                 }
 
-
                 Console.SetCursorPosition(remainig - count + 12, 20 + row);
                 Console.Write(" " + shift);
-
             }
             Console.CursorVisible = true;
 
@@ -238,7 +237,6 @@ namespace PoseProjekt
             {
                 Console.Write("Beliebige Taste drücken, um zum Menü zurück zu kehren...");
                 Console.ReadKey();
-
             }
         }
         public static bool Turn(bool[,] field, ref int player, string charackter, string[] playerNames)
@@ -255,8 +253,6 @@ namespace PoseProjekt
                 {
                     Console.WriteLine("\U0001F5F2 Ungültige Eingabe \U0001F5F2  ", Console.ForegroundColor = ConsoleColor.Red);
                     Console.ResetColor();
-
-
                 }
             } while (!valid && input != "exit");
 
@@ -269,13 +265,11 @@ namespace PoseProjekt
                 Console.Write("Taste drücken um ins Menü zurück zu kehren....");
                 Console.ReadKey();
                 return true;
-
             }
             Animate(row, count, RemainigInRow(field, row - 1), charackter);
             UpdateField(field, row - 1, count);
             player = 1 == player ? 2 : 1;
             return false;
-
         }
         public static void Gamemode(ref int gameMode)
         {
@@ -291,11 +285,8 @@ namespace PoseProjekt
                 gameMode = input;
             }
         }
-
-
         public static bool ValidInput(string input, bool[,] field, out int row, out int count)
         {
-            
             string[] parts = input.Split(',');
             count = -1;
             row = -1;
@@ -341,8 +332,6 @@ namespace PoseProjekt
             }
             return count;
         }
-
-       
     }
     public class Tools
     {
@@ -372,6 +361,5 @@ namespace PoseProjekt
             } while (!valid);
             return input;
         }
-
     }
 }
