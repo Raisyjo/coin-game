@@ -7,8 +7,6 @@
  * eine ganze reihe ziehen
  *---------------------------------------------------------------------------
 */
-
-//copyright will not be tolerated (c) Joey CHU
 using System;
 using System.Threading;
 
@@ -19,10 +17,10 @@ namespace PoseProjekt
     {
         public static void Main()
         {
-            Streichholz.Menü();
+            CoinGAme.Menü();
         }
     }
-    public static class Streichholz
+    public static class CoinGAme
     {
         public static void Menü()// pack alle sachen rein
         {
@@ -131,10 +129,10 @@ namespace PoseProjekt
             do
             {
                 Console.Clear();
-                
-                Streichholz.PrintField(field, charackter);
-                quit = Streichholz.Turn(field, ref player, charackter, playerNames);
-                winner = Streichholz.IsWinner(false, field);
+
+                CoinGAme.PrintField(field, charackter);
+                quit = CoinGAme.Turn(field, ref player, charackter, playerNames);
+                winner = CoinGAme.IsWinner(false, field);
                 if (winner)
                 {
                     if(field.GetLength(0) == 4)
@@ -178,7 +176,6 @@ namespace PoseProjekt
                 Console.WriteLine();
             }
         }
-
         public static bool Turn(bool[,] field, ref int player, string charackter, string[] playerNames)
         {
             bool valid;
@@ -215,8 +212,6 @@ namespace PoseProjekt
             return false;
 
         }
-        //24F5 sind Zahlen 
-        
         public static void Gamemode(ref int gameMode)
         {
             Console.Clear();
@@ -314,4 +309,4 @@ namespace PoseProjekt
         }
 
     }
-    }
+}
