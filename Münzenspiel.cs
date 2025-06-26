@@ -12,6 +12,7 @@ using System;
 using System.Threading;
 
 
+
 namespace PoseProjekt
 {
     public static class Program
@@ -47,7 +48,7 @@ namespace PoseProjekt
                 Console.WriteLine("║ \u24F7 : Coin Inventory                                 ║");
                 Console.WriteLine("║ \u24F8 : Rules    (given at the start of the game)      ║");
                 Console.WriteLine("╚════════════════════════════════════════════════════╝");
-                int input = Tools.ReadInput("Was möchtest du tun [1 - 6]: ", 6);
+                int input = Tools.ReadInput("Was möchtest du tun [1 - 4]: ", 6);
 
 
                 switch (input)
@@ -87,10 +88,8 @@ namespace PoseProjekt
                     shift = shift.Remove(shift.Length - 1, 1);
                 }
 
-
                 Console.SetCursorPosition(remainig - count + 12, 20 + row);
                 Console.Write(" " + shift);
-
             }
             Console.CursorVisible = true;
 
@@ -255,8 +254,6 @@ namespace PoseProjekt
                 {
                     Console.WriteLine("\U0001F5F2 Ungültige Eingabe \U0001F5F2  ", Console.ForegroundColor = ConsoleColor.Red);
                     Console.ResetColor();
-
-
                 }
             } while (!valid && input != "exit");
 
@@ -269,13 +266,11 @@ namespace PoseProjekt
                 Console.Write("Taste drücken um ins Menü zurück zu kehren....");
                 Console.ReadKey();
                 return true;
-
             }
             Animate(row, count, RemainigInRow(field, row - 1), charackter);
             UpdateField(field, row - 1, count);
             player = 1 == player ? 2 : 1;
             return false;
-
         }
         public static void Gamemode(ref int gameMode)
         {
