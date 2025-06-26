@@ -275,10 +275,10 @@ namespace PoseProjekt
         public static void Gamemode(ref int gameMode)
         {
             Console.Clear();
-            Console.WriteLine("╔═══════════════════Spiel-Modus══════════════════════╗");
-            Console.WriteLine("║ \u24F5 : Standard (Pyramide)                       ║");
-            Console.WriteLine("║ \u24F6 : Block                                     ║");
-            Console.WriteLine("║ \u24FA : Zurück zum Menü                           ║");
+            Console.WriteLine("╔═══════════════════Game - Mode══════════════════════╗");
+            Console.WriteLine("║ \u24F5 : Standard (Pyramide)                            ║");
+            Console.WriteLine("║ \u24F6 : Block                                          ║");
+            Console.WriteLine("║ \u24FA : Zurück zum Menü                                ║");
             Console.WriteLine("╚════════════════════════════════════════════════════╝");
            int input = Tools.ReadInput("Wähle ein Spielmodus aus[1-3]: ", 6);
             if (input != 6)
