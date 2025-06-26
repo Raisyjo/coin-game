@@ -64,7 +64,34 @@ namespace PoseProjekt
                 }
             }
         }
-        
+        public static void Animate(int row, int count, int remainig, string charackter)
+        {
+            //22 + row
+            //7 + col
+            string shift = "";
+            for (int i = 0; i < count; i++)
+            {
+                shift += charackter;
+            }
+
+            int width = Console.WindowWidth;
+            Console.CursorVisible = false;
+            for (; width - 1 > remainig - count + 12; remainig++)
+            {
+
+                if (width - 1 < remainig - count + 12 + shift.Length)
+                {
+                    shift = shift.Remove(shift.Length - 1, 1);
+                }
+
+
+                Console.SetCursorPosition(remainig - count + 12, 20 + row);
+                Console.Write(" " + shift);
+
+            }
+            Console.CursorVisible = true;
+
+        }
         public static void Skin(ref string charackter)
         {
             Console.Clear();
