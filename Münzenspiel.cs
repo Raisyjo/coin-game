@@ -1,14 +1,13 @@
 ﻿/*--------------------------------------------------------------
  *                HTBLA-Leonding / Class: 1AKING
  *--------------------------------------------------------------
- *              Joey CHU 
+ *      Joey CHU,Tunahan Yildiz,Macanovic Radovan,Jakob Bachl 
  *--------------------------------------------------------------
  * Münzenspiel--- pyramide man zieht abwechselnd mit jedem zug kann man max
  * eine ganze reihe ziehen
  *---------------------------------------------------------------------------
 */
 
-//copyright will not be tolerated (c) Joey CHU
 using System;
 using System.Threading;
 
