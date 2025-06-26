@@ -289,7 +289,7 @@ namespace PoseProjekt
         public static bool ValidInput(string input, bool[,] field, out int row, out int count)
         {
             string[] parts = input.Split(',');
-            count = -1;
+            count = -1; 
             row = -1;
             if (input == "exit")
             {
