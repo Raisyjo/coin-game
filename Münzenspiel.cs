@@ -99,12 +99,12 @@ namespace PoseProjekt
             Console.Clear();
            
             Console.WriteLine("╔═══════════════════Skin═════════════════════════════╗");
-            Console.WriteLine("║ \u24F5 : \u058D   (Standard)                               ║");
-            Console.WriteLine("║ \u24F6 : \u2605                                            ║");
-            Console.WriteLine("║ \u24F7 : \U0001F525                                            ║");
-            Console.WriteLine("║ \u24F8 : \u2694                                            ║");
-            Console.WriteLine("║ \u24F9 : \u2620                                            ║");
-            Console.WriteLine("║ \u24FA : Back to the menu                              ║");
+            Console.WriteLine("║ \u24F5 : \u058D   (Standard)                                 ║");
+            Console.WriteLine("║ \u24F6 : \u2605                                              ║");
+            Console.WriteLine("║ \u24F7 : \U0001F525                                             ║");
+            Console.WriteLine("║ \u24F8 : \u2694                                              ║");
+            Console.WriteLine("║ \u24F9 : \u2620                                              ║");
+            Console.WriteLine("║ \u24FA : Back to the menu                               ║");
             Console.WriteLine("╚════════════════════════════════════════════════════╝");
             int input = Tools.ReadInput("Choose a skin: ", 6);
 
