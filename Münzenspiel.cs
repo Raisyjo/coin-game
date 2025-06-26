@@ -23,7 +23,7 @@ namespace PoseProjekt
     }
     public static class CoinGame
     {
-        public static void Menü()// pack alle sachen rein
+        public static void Menü()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             string[] playerNames = { "1", "2" };
@@ -107,7 +107,7 @@ namespace PoseProjekt
             bool random = false;
             if(gameMode == 5)
             {
-                Random rnd = new Random(); // wiederholt aufgerufen
+                Random rnd = new Random();
                  gameMode = rnd.Next(1, 4);
                 random = true;
             }
