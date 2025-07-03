@@ -275,7 +275,7 @@ namespace PoseProjekt
             player = 1 == player ? 2 : 1;
             return false;
         }
-       // Radovan
+       // Joey
         public static void Gamemode(ref int gameMode)
         {
             Console.Clear();
