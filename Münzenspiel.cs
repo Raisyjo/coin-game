@@ -47,7 +47,7 @@ namespace PoseProjekt
                 Console.WriteLine("║ \u24F7 : Coin Inventory                                ║");
                 Console.WriteLine("║ \u24F8 : Rules                                         ║");
                 Console.WriteLine("╚═══════════════════════════════════════════════════╝");
-                int input = Tools.ReadInput("Was möchtest du tun [1 - 4]: ", 6);
+                int input = Tools.ReadInput("Was möchtest du tun [1 - 4]: ", 4);
 
 
                 switch (input)
@@ -164,10 +164,7 @@ namespace PoseProjekt
                 winner = CoinGame.IsWinner(false, field);
                 if (winner)
                 {
-                    if(field.GetLength(0) == 4)
-                    Console.SetCursorPosition(0, 26);
-                    else
-                        Console.SetCursorPosition(0, 29);
+                   
                     Console.Write("\U0001F3C5");
                     Console.WriteLine(" Spieler " + (player == 1 ? playerNames[0] : playerNames[1]) + " hat gewonnen \U0001F3C6");
                     Console.ReadKey();
