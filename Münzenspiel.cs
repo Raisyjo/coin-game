@@ -24,6 +24,7 @@ namespace PoseProjekt
     }
     public static class CoinGame
     {
+        //joey
         public static void Menü()
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -67,6 +68,7 @@ namespace PoseProjekt
                 }
             }
         }
+        //Joey
         public static void Animate(int row, int count, int remainig, string charackter)
         {
             //22 + row
@@ -96,6 +98,7 @@ namespace PoseProjekt
             Console.CursorVisible = true;
 
         }
+       // jakob
         public static void Skin(ref string charackter)
         {
             Console.Clear();
@@ -130,6 +133,7 @@ namespace PoseProjekt
                     break;
             }
         }
+       //Jakob
         public static void Game(bool[,] field, string charackter, string[] playerNames, int gameMode,int count)
         {
            
@@ -171,6 +175,7 @@ namespace PoseProjekt
                 }
             } while (!winner && !quit);
         }
+        //Tunahan
         public static bool IsWinner(bool end, bool[,] field)
         {
             if (!end)
@@ -188,6 +193,7 @@ namespace PoseProjekt
             }
             return true;
         }
+        // Tunahan
         public static void PrintField(bool[,] field, string charackter)
         {
             for (int row = 0; row < field.GetLength(0); row++)
@@ -236,6 +242,7 @@ namespace PoseProjekt
                 Console.ReadKey();
             }
         }
+        // Jakob
         public static bool Turn(bool[,] field, ref int player, string charackter, string[] playerNames)
         {
             bool valid;
@@ -268,6 +275,7 @@ namespace PoseProjekt
             player = 1 == player ? 2 : 1;
             return false;
         }
+       // Radovan
         public static void Gamemode(ref int gameMode)
         {
             Console.Clear();
@@ -282,6 +290,7 @@ namespace PoseProjekt
                 gameMode = input;
             }
         }
+       //Joey
         public static bool ValidInput(string input, bool[,] field, out int row, out int count)
         {
             string[] parts = input.Split(',');
@@ -339,6 +348,7 @@ namespace PoseProjekt
             Console.Write(message);
             return Console.ReadLine();
         }
+        //Tunahan
         public static int ReadInput(string message, int max)
         {
             int input;
