@@ -11,8 +11,6 @@
 using System;
 using System.Threading;
 
-
-
 namespace PoseProjekt
 {
     public static class Program
